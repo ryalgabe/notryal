@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-gray-900 bg-gray-50;
+  }
+}
+
+@layer components {
+  .prose {
+    @apply max-w-none;
+  }
+  
+  .prose p {
+    @apply mb-2;
+  }
+  
+  .prose h1, .prose h2, .prose h3 {
+    @apply font-bold mb-2;
+  }
+  
+  .prose ul, .prose ol {
+    @apply ml-4;
+  }
+}
